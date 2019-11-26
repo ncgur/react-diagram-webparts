@@ -28,11 +28,8 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@flow-components/*": [
-        "src/webparts/flow/components/*"
-      ],
-      "@sequence-components/*": [
-        "src/webparts/sequence/components/*"
+      "@mermaid-components/*": [
+        "src/webparts/mermaid/components/*"
       ],
       "@controls/*": [
         "src/controls/*"
@@ -52,6 +49,6 @@
     "node_modules",
     "lib"
   ],
-  "extends": "./node_modules/@microsoft/rush-stack-compiler-2.7/includes/tsconfig-web.json"
+  "extends": "./node_modules/@microsoft/rush-stack-compiler-2.9/includes/tsconfig-web.json"
 
 }

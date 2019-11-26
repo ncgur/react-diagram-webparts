@@ -9,12 +9,12 @@ import { DefaultButton, PrimaryButton, IconButton } from 'office-ui-fabric-react
 
 import { Async } from 'office-ui-fabric-react/lib/Utilities';
 
-import { AceOptions } from 'react-ace';
+import { IAceOptions } from 'react-ace';
 
 import * as strings from 'PropertyFieldAceEditorStrings';
 
 export interface IEditorPanelProps {
-  aceOptions?: AceOptions;
+  aceOptions?: IAceOptions;
   customMode?: () => void;
   defaultValue?: string;
   deferredValidationTime?: number;

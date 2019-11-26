@@ -1,12 +1,12 @@
 import { IPropertyPaneCustomFieldProps } from "@microsoft/sp-property-pane";
-import { AceOptions } from 'react-ace';
+import { IAceOptions } from 'react-ace';
 
 export interface IPropertyFieldAceEditorProps {
   /**
    * Options specific to the ACE code editor component
    * See https://github.com/ajaxorg/ace/wiki/Configuring-Ace
    */
-  aceOptions?: AceOptions;
+  aceOptions?: IAceOptions;
 
   customMode?: ()=>void;
 

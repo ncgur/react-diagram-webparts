@@ -1,5 +1,5 @@
 import { IPropertyFieldAceEditorPropsInternal } from './IPropertyFieldAceEditor';
-import { Annotation } from 'react-ace';
+import { IAnnotation } from 'react-ace';
 
 
 /**
@@ -10,7 +10,7 @@ export interface IPropertyFieldAceEditorHostProps extends IPropertyFieldAceEdito
 }
 
 export interface IPropertyFieldAceEditorHostState {
-  annotations: Annotation[];
+  annotations: IAnnotation[];
   editorClassName?: string;
   editorHeight?: string;
   errorMessage?: string;

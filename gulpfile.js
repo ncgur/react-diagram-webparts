@@ -14,8 +14,9 @@ build.configureWebpack.mergeConfig({
     }
 
     // web part specific components folder
-    generatedConfiguration.resolve.alias['@flow-components'] = path.resolve( __dirname, 'lib/webparts/flow/components/')
-    generatedConfiguration.resolve.alias['@sequence-components'] = path.resolve( __dirname, 'lib/webparts/flow/sequence/')
+    //generatedConfiguration.resolve.alias['@flow-components'] = path.resolve( __dirname, 'lib/webparts/flow/components/')
+    //generatedConfiguration.resolve.alias['@sequence-components'] = path.resolve( __dirname, 'lib/webparts/flow/sequence/')
+    generatedConfiguration.resolve.alias['@mermaid-components'] = path.resolve( __dirname, 'lib/webparts/mermaid/components/')
 
     // common
     generatedConfiguration.resolve.alias['@common'] = path.resolve( __dirname, 'lib/common/')

@@ -2,22 +2,6 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "sequence-web-part": {
-      "components": [
-        {
-          "entrypoint": "./lib/webparts/sequence/SequenceWebPart.js",
-          "manifest": "./src/webparts/sequence/SequenceWebPart.manifest.json"
-        }
-      ]
-    },
-    "flow-web-part": {
-      "components": [
-        {
-          "entrypoint": "./lib/webparts/flow/FlowWebPart.js",
-          "manifest": "./src/webparts/flow/FlowWebPart.manifest.json"
-        }
-      ]
-    },
     "mermaid-web-part": {
       "components": [
         {
@@ -29,8 +13,6 @@
   },
   "externals": {},
   "localizedResources": {
-    "SequenceWebPartStrings": "lib/webparts/sequence/loc/{locale}.js",
-    "FlowWebPartStrings": "lib/webparts/flow/loc/{locale}.js",
     "PropertyFieldAceEditorStrings": "lib/controls/propertyfieldaceeditor/loc/{locale}.js",
     "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
     "MermaidWebPartStrings": "lib/webparts/mermaid/loc/{locale}.js"

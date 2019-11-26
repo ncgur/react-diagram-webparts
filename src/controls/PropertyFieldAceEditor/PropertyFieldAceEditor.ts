@@ -6,7 +6,7 @@ import PropertyFieldAceEditorHost from './PropertyFieldAceEditorHost';
 
 import { IPropertyFieldAceEditorPropsInternal, IPropertyFieldAceEditorProps } from './IPropertyFieldAceEditor';
 
-import { Annotation } from 'react-ace';
+import { IAnnotation } from 'react-ace';
 
 
 class PropertyFieldAceEditorBuilder implements IPropertyPaneField<IPropertyFieldAceEditorPropsInternal> {
@@ -14,7 +14,7 @@ class PropertyFieldAceEditorBuilder implements IPropertyPaneField<IPropertyField
   public type: PropertyPaneFieldType = PropertyPaneFieldType.Custom;
   public properties: IPropertyFieldAceEditorPropsInternal;
   public onPropertyChange(propertyPath: string, oldValue: any, newValue: any): void { }
-  private onGetErrorMessage?: (value: string, annotations: Annotation[]) => string | Promise<string>;
+  private onGetErrorMessage?: (value: string, annotations: IAnnotation[]) => string | Promise<string>;
 
 
   //private _onChangeCallback: (targetProperty?: string, newValue?: any) => void;
